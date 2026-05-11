@@ -1,5 +1,11 @@
 # masa_interfaces
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![License][license-shield]][license-url]
+
 [JA](README.md) | [EN](README.en.md)
 
 masaプロジェクトのためのROS 2インターフェース定義（メッセージ）パッケージです。
@@ -7,28 +13,17 @@ masaプロジェクトのためのROS 2インターフェース定義（メッ�
 
 ## 必要条件
 
-- OS: Ubuntu
-- ROS 2 (Humble/Iron/Jazzy/Rolling)
-- builtin_interfaces
-- std_msgs
+- OS: Ubuntu (22.04 / 24.04推奨)
+- ROS 2: Humble / Jazzy
+- 依存パッケージ: `builtin_interfaces`, `std_msgs`
 
 ## インストール
 
-1. ROS 2ワークスペースの `src` ディレクトリに移動します。
 ```bash
 cd ~/colcon_ws/src
-```
-2. このリポジトリをクローンします（実際のURLに置き換えてください）。
-```bash
-git clone <repository_url>
-```
-3. ワークスペースのルートに移動し、ビルドします。
-```bash
+git clone https://github.com/m-shigemori/masa_interfaces.git
 cd ~/colcon_ws
 colcon build --packages-select masa_interfaces
-```
-4. ワークスペースをソースします。
-```bash
 source install/setup.bash
 ```
 
@@ -49,4 +44,19 @@ source install/setup.bash
 
 ## ライセンス
 
-Apache-2.0
+[BSD 3-Clause License](LICENSE)
+
+[contributors-shield]: https://img.shields.io/github/contributors/m-shigemori/masa_interfaces?style=for-the-badge
+[contributors-url]: https://github.com/m-shigemori/masa_interfaces/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/m-shigemori/masa_interfaces?style=for-the-badge
+[forks-url]: https://github.com/m-shigemori/masa_interfaces/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/m-shigemori/masa_interfaces?style=for-the-badge
+[stars-url]: https://github.com/m-shigemori/masa_interfaces/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/m-shigemori/masa_interfaces?style=for-the-badge
+[issues-url]: https://github.com/m-shigemori/masa_interfaces/issues
+
+[license-shield]: https://img.shields.io/github/license/m-shigemori/masa_interfaces?style=for-the-badge
+[license-url]: https://github.com/m-shigemori/masa_interfaces/blob/main/LICENSE
